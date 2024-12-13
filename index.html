@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
   <title>Document</title>
 </head>
-<body>
+<body class="light-theme">
   <header>
     <audio id="music" autoplay>
       <source src="assets/musics/normal-world.mpeg">
@@ -24,9 +24,11 @@
   </header>
 
   <main>
+    <div id="bottom-characters" class="world-characters"></div>
+    
     <section id="section-inverted-world" class="container">
       <div class="section-texts">
-        <h1>O Mundo Invertido</h1>
+        <h2>O Mundo Invertido</h2>
         <p role="text">
           O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino
           controlado por Vecna, que tem planos de trazer tudo isso ao nosso mundo.
@@ -73,21 +75,23 @@
       <div class="form-content">
         <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo</span></h3>
 
-        <form>
-          <label for="txtName">Nome Completo</label>
-          <input type="text" name="name" id="txtName">
+        <div class="form-container">
+        <form action="">
+          <label for="name">Nome Completo</label>
+          <input type="text" name="name" id="name">
 
-          <label for="txtEmail">Nome Completo</label>
-          <input type="email" name="email" id="txtEmail">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email">
 
-          <label for="txtLevel">Level</label>
-          <input type="text" name="level" id="txtLevel">
+          <label for="level">Level</label>
+          <input type="text" name="level" id="level">
 
-          <label for="txtCharacter">Personagem</label>
-          <textarea type="character" cols="30" rows="10" id="txtCharacter"></textarea>
+          <label for="character">Personagem</label>
+          <textarea type="character" cols="30" rows="10" id="character"></textarea>
 
-          <button type="button" id="btnSubscribe">Me inscrever</button>
+          <button>Me inscrever</button>
         </form>
+      </div>
       </div>
     </section>
   </main>
@@ -98,6 +102,6 @@
     </p>
     <img src="assets/images/footer/logo.svg" alt="Logo DIO">
   </footer>
-  
+
 </body>
 </html>
